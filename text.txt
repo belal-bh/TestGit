@@ -1,5 +1,141 @@
-This is my first text file.This is my first text file.This is my first text file.
 This is my first text file.
-This is my first text file.
-This is my first text file.
-This is my first text file.
+##################### what I have done in this lesson ##################
+
+ASUS@BELAL MINGW64 ~
+$ cd /d
+
+ASUS@BELAL MINGW64 /d
+$ ls
+'$RECYCLE.BIN'/    EclipseJava/    NotepadJava/
+ Applications/     eSupport/       Soft/
+ Books/            ExtraApps/     'System Volume Information'/
+ Code/             Html/           TempSoft/
+ DownloadedSoft/   MSOProjects/    VisualStudioProjects/
+ EclipseAndroid/   NetbeansJava/   WebProject/
+
+ASUS@BELAL MINGW64 /d
+$ ls
+'$RECYCLE.BIN'/    eSupport/       Soft/
+ Applications/     ExtraApps/     'System Volume Information'/
+ Books/            git/            TempSoft/
+ Code/             Html/           VisualStudioProjects/
+ DownloadedSoft/   MSOProjects/    WebProject/
+ EclipseAndroid/   NetbeansJava/
+ EclipseJava/      NotepadJava/
+
+ASUS@BELAL MINGW64 /d
+$ cd git
+
+ASUS@BELAL MINGW64 /d/git
+$ ls
+
+ASUS@BELAL MINGW64 /d/git
+$ git config --global user.name "belal-bh"
+
+ASUS@BELAL MINGW64 /d/git
+$ git config --global user.email bh.pro.pust@gmail.com
+
+ASUS@BELAL MINGW64 /d/git
+$ git clone https://github.com/belal-bh/TestGit.git
+Cloning into 'TestGit'...
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+
+ASUS@BELAL MINGW64 /d/git
+$ ls
+TestGit/
+
+ASUS@BELAL MINGW64 /d/git
+$ cd TestGit
+
+ASUS@BELAL MINGW64 /d/git/TestGit (master)
+$ ls
+LICENSE  README.md
+
+ASUS@BELAL MINGW64 /d/git/TestGit (master)
+$ ls
+LICENSE  README.md  text.txt
+
+ASUS@BELAL MINGW64 /d/git/TestGit (master)
+$ ls
+LICENSE  README.md  text.txt
+
+ASUS@BELAL MINGW64 /d/git/TestGit (master)
+$ git add text.txt
+
+ASUS@BELAL MINGW64 /d/git/TestGit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   text.txt
+
+
+ASUS@BELAL MINGW64 /d/git/TestGit (master)
+$ git commit -m "first commit" text.txt
+[master 6e9a6e7] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text.txt
+
+ASUS@BELAL MINGW64 /d/git/TestGit (master)
+$ git push -u origin master
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': belal-bh
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 329 bytes | 329.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/belal-bh/TestGit.git
+   d9c556f..6e9a6e7  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+ASUS@BELAL MINGW64 /d/git/TestGit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   text.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ASUS@BELAL MINGW64 /d/git/TestGit (master)
+$ git commit -m "second commit" text.txt
+[master ae89608] second commit
+ 1 file changed, 4 insertions(+)
+
+ASUS@BELAL MINGW64 /d/git/TestGit (master)
+$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 282 bytes | 282.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/belal-bh/TestGit.git
+   6e9a6e7..ae89608  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+ASUS@BELAL MINGW64 /d/git/TestGit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+ASUS@BELAL MINGW64 /d/git/TestGit (master)
+$ ls
+LICENSE  README.md  text.txt
+
+ASUS@BELAL MINGW64 /d/git/TestGit (master)
+$
