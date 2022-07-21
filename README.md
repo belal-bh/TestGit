@@ -3,4 +3,4 @@ Testing Git
 
 ## Learn Git
 
-[x] Add SSH Key
+[x] Add SSH Key for GitHub
